@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Professores- AutoGlass</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/professores.css">
+    <link rel="stylesheet" href="../css/modal_add_professor.css">
+</head>
+<body>
+    <script src="../js/modal_add_professor.js"></script>
+      <header>
+        <nav>
+          <div class="sidebar close">
+              <div class="logo-details">
+                <img src="..\imagens\AutoLogo.png" class="logo">
+              </div>
+              <ul class="nav-links">
+                <li>
+                  <i><img src="../imagens/icon-home.svg" alt="Tela Inicial"></i>
+                  <ul class="sub-menu blank">
+                    <li>
+                      <a class="link_name" href="#">Tela de Início</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <i> <img src="../imagens/icon-calendario.svg" alt="Calendário"></i>
+                  <ul class="sub-menu blank">
+                    <li>
+                      <a class="link_name" href="#">Calendário</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <i> <img src="../imagens/icon-instrutores.svg" alt="Instrutores"></i>
+                  <ul class="sub-menu blank">
+                    <li>
+                      <a class="link_name" href="#">Professores</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <i> <img src="../imagens/icon-salas.svg" alt="Salas"></i>
+                  <ul class="sub-menu blank">
+                    <li>
+                      <a class="link_name" href="#">Salas</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <i> <img src="../imagens/icon-turmas.svg" alt="Turmas"></i>
+                  <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Turmas</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <i> <img src="../imagens/icon-disciplinas.svg" alt="Disciplinas"></i>
+                  <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Disciplinas</a></li>
+                  </ul>
+                </li>
+              </ul>
+          </div>
+        </nav>
+      </header>
+
+        <section class="home-section">
+            <div class="cabecario">
+                <p id="titulo">Professores</p>
+                <!-- <input  placeholder="Pesquisar professor"> -->
+            </div>
+            <div class="cabecariosecundario">
+                <input type="button" value="Adicionar Professor" class="btn_adicionar_professor" onclick="cadastrar()">
+            </div>
+
+
+
+          <!-- A tabela dinâmica vêm pra cá-->
+    <section>
+      <div id="professoresView"></div>
+    </section> 
+        <!-- --------------------AQUI COMEÇA O NOSSO MODAL-------------------------- -->
+
+        <div class="modal-overlay" id="overlay">
+          <div class="modal">
+              <span onclick="fechar()" class="fechar">&times;</span>
+              <div id="boxCadastro">
+                  <h1>Adicionar Professor</h1>
+                  <div class="linha"></div>
+                  <div id="mensagemView"></div> <!-- A mensagem dinâmica vêm pra cá-->
+          
+                  <form onsubmit="professorController.adiciona(event)">
+                      <div class="boxCredenciais" id="boxNomeCompleto">
+                          <p>Nome Completo</p>
+                          <input type="text" class="botao" id="nome">
+                      </div>
+                      <div class="boxCredenciais" id="boxNumeroApelido">
+                          <div>
+                              <p>Contato</p>
+                              <input type="text" class="botao" id="contato">
+                          </div>
+                          <div>
+                              <p>Apelido</p>
+                              <input type="text" class="botao" id="apelido">
+                          </div>
+                      </div>
+                      <div class="boxCredenciais" id="boxCargoArea">
+                          <div>
+                              <p>Cargo</p>
+                              <input type="text" class="botao" id="cargo">
+                          </div>
+                          <div>
+                              <p>Área</p>
+                              <input type="text" class="botao" id="area">
+                          </div>
+                      </div>
+                      <div class="boxCredenciais" id="boxEmail">
+                          <p>E-mail</p>
+                          <input type="email" class="botao" id="email">
+                      </div>
+                      <div class="boxCredenciais" id="boxConcluir">
+                          <input type="submit" id="botaoConcluir" value="Concluir">
+                      </div>
+                  </form>
+              </div>
+          </div>    
+        </div>
+      </div>
+      </section>
+  </div>
+
+
+    <script src="../js/app/models/Professor.js"></script>
+    <script src="../js/app/models/ListaProfessores.js"></script>
+    <script src="../js/app/controllers/ProfessorController.js"></script>
+    <script src="../js/app/views/View.js"></script>
+    <script src="../js/app/views/ProfessoresView.js"></script>
+    <script src="../js/app/models/Mensagem.js"></script>
+    <script src="../js/app/views/MensagemView.js"></script>
+    <script>
+        let professorController = new ProfessorController();
+    </script>
+</body>
+</html>
