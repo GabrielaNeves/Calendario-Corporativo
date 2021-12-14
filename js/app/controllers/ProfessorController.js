@@ -14,7 +14,7 @@ class ProfessorController {
         this._professoresView.update(this._listaProfessores);
         this._mensagem = new Mensagem();
         this._mensagemView = new MensagemView($('#mensagemView'));
-        this._mensagemView.update(this._mensagem);
+        // this._mensagemView.update(this._mensagem);
     }
 
     adiciona(event) {

@@ -7,200 +7,64 @@
     overflow-y: hidden
 } */
 
-
-
-/* main{
-    position: relative;
-    min-height: calc(100vh - 140px);
-    margin: 10px;
-    margin-left: 20px;
-} */
-
-/* .container{
-    display: flex;  
-} */
-
-#titulo{
-    font-weight: bold;
+*{
+    font-family: Calibri;
 }
-/* .navegacao{
-    width: 71px;
-    height: 100vh;
-    background: #003DA5;   
-} */
-/* .teste{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-} */
-/* .logo{
-    height: 80%;
-    width: 80%;
-    border-radius: 10px;
-} */
-header{
-    display: flex;
-}
-/* header div li{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-header div li:hover{
-    background: black;
-} */
-/* section{
-    width: 100%;
-    background-color: #EDEDED;
-} */
-
-/* .home-section{  
-    position: relative; */
-    /* background: #e4e4e4;  
-    min-height: 100vh; 
-    top: 0;  
-    left: 78px;  
-    width: calc(100% - 78px);  
-    transition: all 0.5s ease;  
-    z-index: 2; */
 
 .home-section{
-    position: relative;
     background-color: white;
-    min-height: 100vh;
-    top: 0;
-    left: 78px;
-    width: calc(100% - 78px);
-    transition: all 0.5s ease;
-    z-index: 2;
-}
-
-.cabecario{
-    height: 50px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    /* border-bottom: 1px solid #cccccc; */
-    background-color: white;
-    padding-left: 40px;
-}
-.cabecario p{
-    font-size: 24px;
-    /* margin-left: 57px; */
-    margin-right: 81px;
-    font-weight: lighter;
-}
-/* .cabecario input{
-    height: 24px;
-    width: 200px;
-    border-radius: 5px;
-    border: 0.5px solid #cccccc;
-    font-family: 'Calibri';
-    font-size: 16px;
-}
-.cabecario input:focus{
-    outline: 0;
-    font-family: 'Calibri';
-    font-size: 16px;
-} */
-.cabecariosecundario{
-    height: 50px;
-    width: 100%;
-    background: white;
-    align-items: center;
-    display: flex;
     border-bottom: 1px solid #cccccc;
-    padding-left: 40px;
+    margin: 0px 12px 0px 90px;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.home-section p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-section .cabecariosecundario input{
-    height: 37px;
-    width: 152px;
-    background-color: green;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-section .cabecariosecundario input:hover{
-    background-color: rgb(0, 109, 0);
-}
-/* .cabecarioatributos{
-    background: #F6F6F6;
-    width: 100%;
-    height: 100vh;
+/* MODAL */
+.modal-title{
+    font-size: 25px;
+    color: rgb(24, 56, 132);
     display: flex;
-} */
-/* .nomesatributos{
-    font-size: 16px;
     font-weight: bold;
 }
-.turmas{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 10px;
-    padding: 5px;
-    height: 25px;
-    background: #ffffff;
+.boxCredenciais p{
+    margin-bottom: 0px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px
+}
+.botao{
+    background: transparent;
+    height: 40px;
+    width: 100%;
     border-radius: 5px;
-    cursor: pointer;
-} */
-/* .turmas:hover{
-    border: 1px solid #cccccc;
-} */
-/* .atributos span{
-    color: #242424;
-    font-weight: bold;
-    font-size: 18px;
+    border: solid 1px #CCCCCC;
+    padding: 0px 10px;
 }
-
-.turmas span{
-    font-size: 16px;
-} */
-/* .centralizarnomesturmars{
+.botao:focus{
+    outline: 0;
+}
+.boxCredenciais {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    justify-items: center;
+    margin: 5px;
+    flex-direction: column;
 }
-.atributos{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 1px;
-    padding: 10px;
+#boxNumeroApelido, #boxCargoArea{
+    padding-top: 5px;
     display: flex;
-    justify-content: space-around;  
-} */
-/* #boxTabela{
-    background-color: #EDEDED;
-    margin: 0 57px 0 57px;
-} */
-
-table{
-    width: 100%;
-    padding-top: 10px;
+    flex-direction: row;  
+    justify-content: space-between;
 }
-th{
-    padding: 5px;
+.boxCredenciais #cargo, #area, #contato, #apelido{
+    width: 65px;
 }
-th, td{
-    text-align: center;
+#boxEmail{
+    padding-top: 5px;
 }
-tfoot td{
-    padding: 10px;
-    background-color: #ebe8e8;
-}
-table, th, td{
-    border-collapse: separate;
-    border-spacing:0 10px;
-}
-/*
-tbody>tr>:nth-child(1){
-    border-radius: 10px 0px 0px 10px;
-}
-tbody>tr>:nth-child(3){
-    border-radius: 0px 10px 10px 0px;
-} */
