@@ -1,0 +1,26 @@
+{
+  "name": "calendario-corporativo",
+  "version": "1.0.0",
+  "description": "Este é um projeto desenvolvido na equipe da Autoplay.\r Possui como objetivo realizar agendamentos de salas disponíveis de acordo com as datas do calendário presente no site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielaNeves/Calendario-Corporativo.git"
+  },
+  "author": "Gabi, José e Lucas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielaNeves/Calendario-Corporativo/issues"
+  },
+  "homepage": "https://github.com/GabrielaNeves/Calendario-Corporativo#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.12.0-beta.3"
+  }
+}
