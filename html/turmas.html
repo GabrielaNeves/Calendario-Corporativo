@@ -1,76 +1,172 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Turmas - AutoGlass</title>
-    <link rel="stylesheet" href="../css/turmas.css">
-</head>
-<body>
-    <div class="container">
-        <header >
-            <div class="navegacao">
-    
-                <nav>   
-                    
-                    <div class="teste"> 
-                        <img class="logo" src="../imagens/LogoMarca.png">
-                    </div>
-                    
-                    <ul>                     
-                        <li><a href="#"><img class="calendario" src="../imagens/icone_calendario.svg" alt="Calendario"></a></li>
-                        <li><a href="professor.html"><img  src="../imagens/icone_professor.svg" alt="Professores"></a></li>
-                        <li><a href="salas.html"><img  src="../imagens/icone_sala.svg" alt="Salas"></a></li>
-                        <li><a href="turmas.html"><img  src="../imagens/icone_turma.svg" alt="Turmas"></a></li>
-                        <li><a href="disciplina.html"><img  src="../imagens/icone_disciplina.svg" alt="Turmas"></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
 
-        <section>
-            <div class="cabecario">
-                <p id="titulo">Turmas</p>
-                <input  placeholder="Pesquisar sala">
-            </div>
-            <div class="cabecariosecundario">
-                <input type="button" value="Adicionar Turma" class="btn_adicionar_professor">
-            </div>
-            <div class="fundo">
-                <div class="atributos">
-                    <span id="nome"class="nomesatributos">Nome</span>
-                    <span id="ano"class="nomesatributos">Ano/Semestre</span>
-                    <span id="area" class="nomesatributos">Área</span>
-                    <span id="periodo"class="nomesatributos">Período</span>
-                </div>
-                <div class="turmas">
-                    <div class="centralizarnomesturmars">
-                        <span id="nometurma"class="respostas">AutoPlay</span>
-                        <span id="anoturma"class="respostas">2021/2</span>
-                        <span id="areaturma"class="respostas">Ti</span>
-                        <span id="periodoturma"class="respostas">Vespertino</span>
-                    </div>
-                </div>
-                <div class="turmas">
-                    <div class="centralizarnomesturmars">
-                        <span id="nometurma"class="respostas">Insufiume</span>
-                        <span id="anoturma"class="respostas">2021/2</span>
-                        <span id="areaturma"class="respostas">Ti</span>
-                        <span id="periodoturma"class="respostas">Mecânica</span>
-                    </div>
-                </div>
-                <div class="turmas">
-                        <div class="centralizarnomesturmars">
-                            <span id="nometurma"class="respostas">AutoPlay</span>
-                            <span id="anoturma"class="respostas">2022/2</span>
-                            <span id="areaturma"class="respostas">TI</span>
-                            <span id="periodoturma"class="respostas">Vespertino</span>
-                        </div>
-                    </div>
-            </div>
-        </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Instrutores - Autoglass</title>
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/turmas.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <!--Insert Bootstrap here-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!--Animated buttons-->
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="sidebar close">
+        <div class="logo-details">
+          <img src="..\imagens\AutoLogo.png" class="logo">
+        </div>
+        <ul class="nav-links">
+          <li>
+            <i><img src="../imagens/icon-home.svg" alt="Tela Inicial"></i>
+            <ul class="sub-menu blank">
+              <li>
+                <a class="link_name" href="#">Tela de Início</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <i> <img src="../imagens/icon-calendario.svg" alt="Calendário"></i>
+            <ul class="sub-menu blank">
+              <li>
+                <a class="link_name" href="#">Calendário</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <i> <img src="../imagens/icon-instrutores.svg" alt="Instrutores"></i>
+            <ul class="sub-menu blank">
+              <li>
+                <a class="link_name" href="../html/professor.html">Instrutores</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <i> <img src="../imagens/icon-salas.svg" alt="Salas"></i>
+            <ul class="sub-menu blank">
+              <li>
+                <a class="link_name" href="#">Salas</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <i> <img src="../imagens/icon-turmas.svg" alt="Turmas"></i>
+            <ul class="sub-menu blank">
+              <li>
+                <a class="link_name" href="../html/turmas.html">Turmas</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <i> <img src="../imagens/icon-disciplinas.svg" alt="Disciplinas"></i>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Disciplinas</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="home-section">
+    <div class="cabecario">
+
+      <div>
+        <h1 id="titulo">Turmas</h1>
+      </div>
+      <div class="Search-button">
+        <div class="search-box">
+          <input type="text" class="search-input" placeholder="Pesquisar Turma">
+          <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+      </div>
+
     </div>
-   
+
+    <!-- <input  placeholder="Pesquisar professor"> -->
+    </div>
+    <div class="cabecariosecundario">
+      <div class="campo-contadores">
+        <div class="contador-1">
+          <div class="icone-contador">
+            <div class="background-icon">
+              <i><img src="../imagens/icon-turmas.svg"></i>
+            </div>
+          </div>
+          <div class="textos-contadores">
+            <h3>Nº Turmas</h3>
+            <h2>10</h2>
+          </div>
+        </div>
+        <div class="contador-2">
+          <div class="icone-contador">
+            <div class="background-icon">
+              <i><img src="../imagens/icon-home.svg"></i>
+            </div>
+          </div>
+          <div class="textos-contadores">
+            <h3>Nº Turmas</h3>
+            <h2>10</h2>
+          </div>
+        </div>
+        <div class="contador-3">
+          <div class="icone-contador">
+            <div class="background-icon">
+              <i><img src="../imagens/icon-disciplinas.svg"></i>
+            </div>
+          </div>
+          <div class="textos-contadores">
+            <h3>Contador</h3>
+            <h2>10</h2>
+          </div>
+        </div>
+        <div class="contador-4">
+          <div class="icone-contador">
+            <div class="background-icon">
+              <i><img src="../imagens/icon-salas.svg"></i>
+            </div>
+          </div>
+          <div class="textos-contadores">
+            <h3>Nº alunos</h3>
+            <h2>99</h2>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <section class="campos-gerais">
+      <div class="primeiro-campo">
+       
+        <!-- <div class="filtros">
+          <button class='btn-expandable btn-sm btn btn-primary d-flex align-items-center'>
+            <i class="fa fa-plus d-inline-block"></i>
+            <div class='requestShiftLabel'>
+              <input type="text">
+            </div>
+          </button>
+        </div> -->
+
+        <div class="Btn-cadastrar">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Cadastrar turma
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,72 +1,104 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     font-family: 'Calibri';
     overflow-y: hidden
+} */
+
+
+
+/* main{
+    position: relative;
+    min-height: calc(100vh - 140px);
+    margin: 10px;
+    margin-left: 20px;
+} */
+
+/* .container{
+    display: flex;  
+} */
+*{
+    font-family: Calibri;
 }
-.container{
-    display: flex;
-    
-}
+
 #titulo{
     font-weight: bold;
 }
-
-.navegacao{
+/* .navegacao{
     width: 71px;
     height: 100vh;
     background: #003DA5;   
-}
-.teste{
+} */
+/* .teste{
     display: flex;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.logo{
+} */
+/* .logo{
     height: 80%;
     width: 80%;
     border-radius: 10px;
-    
-  
-}
+} */
 header{
     display: flex;
 }
-
-header div li{
+/* header div li{
     display: flex;
     justify-content: center;
     padding: 20px;
 }
 header div li:hover{
     background: black;
-}
-section{
+} */
+/* section{
     width: 100%;
+    background-color: #EDEDED;
+} */
+
+/* .home-section{  
+    position: relative; */
+    /* background: #e4e4e4;  
+    min-height: 100vh; 
+    top: 0;  
+    left: 78px;  
+    width: calc(100% - 78px);  
+    transition: all 0.5s ease;  
+    z-index: 2; */
+
+.home-section{
+    position: relative;
+    background-color: rgb(238, 238, 238);
+    min-height: 100vh;
+    top: 0;
+    left: 78px;
+    width: calc(100% - 78px);
+    transition: all 0.5s ease;
 }
+
 .cabecario{
-    
-    height: 53px;
+    height: 90px;
     width: 100%;
     display: flex;
     align-items: center;
     border-bottom: 1px solid #cccccc;
+    background-color: white;
+    padding-left: 40px;
 }
-.cabecario p{
-    font-size: 24px;
-    margin-left: 57px;
+.cabecario h1{
+    color: rgb(24, 56, 132);
+    font-size: 28px;
+    /* margin-left: 57px; */
     margin-right: 81px;
     font-weight: lighter;
 }
-.cabecario input{
+/* .cabecario input{
     height: 24px;
     width: 200px;
     border-radius: 5px;
-    border: 1px solid #CCCCCC;
+    border: 0.5px solid #cccccc;
     font-family: 'Calibri';
     font-size: 16px;
 }
@@ -74,59 +106,32 @@ section{
     outline: 0;
     font-family: 'Calibri';
     font-size: 16px;
-    
-}
-.cabecariosecundario{
-    height: 54px;
-    width: 100%;
-    background: #EDEDED;
-    align-items: center;
-    display: flex;
-    border-bottom: 1px solid #cccccc;
-    
-}
-section .cabecariosecundario input{
+} */
+
+/* 
+.Btn-modal{
     height: 37px;
     width: 152px;
-    background: #008000;
+    background-color: green;
     color: white;
     font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
-    margin-left: 49px;
 }
-.cabecarioatributos{
+.Btn-modal:hover{
+    background-color: rgb(0, 109, 0);
+} */
+/* .cabecarioatributos{
     background: #F6F6F6;
     width: 100%;
     height: 100vh;
     display: flex;
-}
-.atributos{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 1px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    
-}
-.nomesatributos{
+} */
+/* .nomesatributos{
     font-size: 16px;
     font-weight: bold;
 }
-/* #nome{
-    margin-left: 50px;
-}
-#ano{
-    margin-left: 167px;
-}
-#area{
-    margin-left: 114px; 
-}
-#periodo{
-    margin-left: 130px;
-} */
 .turmas{
     margin-left: 50px;
     margin-right: 50px;
@@ -136,25 +141,244 @@ section .cabecariosecundario input{
     background: #ffffff;
     border-radius: 5px;
     cursor: pointer;
-}
-.turmas:hover{
+} */
+/* .turmas:hover{
     border: 1px solid #cccccc;
-}
-.atributos span{
+} */
+/* .atributos span{
     color: #242424;
     font-weight: bold;
     font-size: 18px;
 }
-.fundo{
-    background: #F6F6F6;
-    height: 100%;
-    width: 100%;
-}
+
 .turmas span{
     font-size: 16px;
-}
-.centralizarnomesturmars{
+} */
+/* .centralizarnomesturmars{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     text-align: center;
+    justify-items: center;
 }
+.atributos{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 1px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;  
+} */
+/* #boxTabela{
+    background-color: #EDEDED;
+    margin: 0 57px 0 57px;
+} */
+
+/*
+tbody>tr>:nth-child(1){
+    border-radius: 10px 0px 0px 10px;
+}
+tbody>tr>:nth-child(3){
+    border-radius: 0px 10px 10px 0px;
+} */
+.campos-gerais{
+    margin: 15px;
+    /* border: solid; */
+    border-radius: 3px;
+    background-color: white;
+    min-height: 500px;
+    padding: 15px;
+}
+.primeiro-campo{
+    
+    margin: 5px;
+    /* border: solid; */
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cabecariosecundario{
+    /* display: flex; */
+    margin: 15px;
+    border-radius: 5px;
+    /* background-color: white; */
+    min-height: 80px;
+    padding: 15px;
+    align-items: center;
+    /* justify-content: space-around; */
+
+}
+.campo-contadores{
+    display: flex;
+    justify-content: space-between;
+}
+.background-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    min-width: 60px;
+    border-radius: 100%;
+    background-color: rgb(15, 15, 77);
+}
+.icone-contador img{
+    min-width: 35px;
+    min-height: 35px;
+
+}
+.contador-1{
+    padding: 15px;
+    height: 85px;
+    min-width: 260px;
+    border-radius: 5px;
+    background-color: rgb(24, 56, 132);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.contador-2{
+    padding: 15px;
+    height: 85px;
+    min-width: 260px;
+    border-radius: 5px;
+    background-color: rgb(24, 56, 132);
+    /* background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(19,19,75,1) 100%); */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.contador-3{
+    padding: 15px;
+    height: 85px;
+    min-width: 260px;
+    border-radius: 5px;
+    background-color: rgb(24, 56, 132);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.contador-4{
+    padding: 15px;
+    height: 85px;
+    min-width: 260px;
+    border-radius: 5px;
+    background-color: rgb(24, 56, 132);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.textos-contadores{
+   
+     display: flex;
+     align-items: center;
+     min-width: 60%;
+}
+.textos-contadores h3{
+    font-size: 16px;
+    margin-bottom: 0px;
+    
+}
+.textos-contadores h2{
+    font-size: 50px;
+    margin-left: 15px;
+}
+
+
+.segundo-campo{
+    margin: 5px;
+    border: solid;
+    min-height: 80px;
+}
+
+.Btn-cadastrar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* div */
+.search-box {
+    position: absolute;
+    top: 6%;
+    left: 13.8%;
+    transform: translate(-50%, -50%);
+    background: rgb(24, 56, 132);
+    height: 50px;
+    border-radius: 2px;
+    padding: 10px;
+  }
+  
+  /* input */
+  .search-input {
+    outline: none;
+    border: none;
+    background: none;
+    width: 0;
+    padding: 0;
+    color: #fff;
+    float: right;
+    font-size: 16px;
+    transition: .3s;
+    line-height: 30px;
+  }
+  
+  .search-input::placeholder {
+    color: #dbc5b0;
+  }
+  
+  /* icon */
+  .search-btn {
+    color: #fff;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: #183884;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: .3s;
+  }
+  
+  .search-input:focus,
+  .search-input:not(:placeholder-shown) {
+    width: 270px;
+    padding: 0 6px;
+  }
+  
+  .search-box:hover > .search-input {
+    width: 270px;
+    padding: 0 6px;
+  }
+  
+  .search-box:hover > .search-btn,
+  .search-input:focus + .search-btn,
+  .search-input:not(:placeholder-shown) + .search-btn {
+    background: #fff;
+    color: #183884;
+  }
+
+  .requestShiftLabel {
+    display: inline-block;
+    max-width: 0;
+    overflow: hidden;
+    transition: all 1s;
+    border-radius: 100%;
+  }
+  
+  button:hover .requestShiftLabel {
+    min-width: 1000px;
+  }
+  .btn-expandable {
+    border-radius: 50px;
+  }
