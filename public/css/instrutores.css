@@ -1,23 +1,40 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Calibri';
-    overflow-y: hidden
-} */
 
 *{
     font-family: Calibri;
 }
-
+body{
+    overflow: hidden;
+}
+th, tr{
+    justify-items: center;
+    text-align: center;
+}
 #titulo{
     font-weight: bold;
 }
-
-header{
+/* header div li{
     display: flex;
+    justify-content: center;
+    padding: 20px;
 }
+header div li:hover{
+    background: black;
+} */
+/* section{
+    width: 100%;
+    background-color: #EDEDED;
+} */
+
+/* .home-section{  
+    position: relative; */
+    /* background: #e4e4e4;  
+    min-height: 100vh; 
+    top: 0;  
+    left: 78px;  
+    width: calc(100% - 78px);  
+    transition: all 0.5s ease;  
+    z-index: 2; */
+
 .home-section{
     position: relative;
     background-color: rgb(238, 238, 238);
@@ -37,27 +54,55 @@ header{
     background-color: white;
     padding-left: 40px;
 }
-.cabecario h1{
-    color: rgb(24, 56, 132);
+.cabecario h2{
+    color: #183884;
     font-size: 28px;
     /* margin-left: 57px; */
     margin-right: 81px;
     font-weight: lighter;
 }
+/* .cabecario input{
+    height: 24px;
+    width: 200px;
+    border-radius: 5px;
+    border: 0.5px solid #cccccc;
+    font-family: 'Calibri';
+    font-size: 16px;
+}
+.cabecario input:focus{
+    outline: 0;
+    font-family: 'Calibri';
+    font-size: 16px;
+} */
 
-/* CSS DO CONTEUDO */
+
+.Btn-modal{
+    height: 37px;
+    width: 152px;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.Btn-modal:hover{
+    background-color: rgb(0, 109, 0);
+}
+
 .campos-gerais{
     margin: 15px;
-    /* border: solid; */
     border-radius: 3px;
     background-color: white;
-    min-height: 500px;
-    padding: 15px;
+    padding: 7px;
+    height: 60vh;
+    overflow-y: scroll;
 }
 .primeiro-campo{
-    margin: 5px;
+
+    padding: 0px;
+    margin: 10px 5px 10px 15px;
     /* border: solid; */
-    min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,12 +110,14 @@ header{
 .cabecariosecundario{
     /* display: flex; */
     margin: 15px;
-    border-radius: 5px;
-    /* background-color: white; */
-    min-height: 80px;
+    border-radius: 3px;
+    background-color: white;
+    /* min-height: 80px; */
+    height: auto;
     padding: 15px;
     align-items: center;
     /* justify-content: space-around; */
+
 }
 .campo-contadores{
     display: flex;
@@ -80,19 +127,19 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 60px;
-    min-width: 60px;
+    min-height: 45px;
+    min-width: 45px;
     border-radius: 100%;
     background-color: rgb(15, 15, 77);
 }
 .icone-contador img{
-    min-width: 35px;
-    min-height: 35px;
+    min-width: 30px;
+    min-height: 30px;
 
 }
 .contador-1{
     padding: 15px;
-    height: 85px;
+    height: 65px;
     min-width: 260px;
     border-radius: 5px;
     background-color: rgb(24, 56, 132);
@@ -104,7 +151,7 @@ header{
 }
 .contador-2{
     padding: 15px;
-    height: 85px;
+    height: 65px;
     min-width: 260px;
     border-radius: 5px;
     background-color: rgb(24, 56, 132);
@@ -116,7 +163,7 @@ header{
 }
 .contador-3{
     padding: 15px;
-    height: 85px;
+    height: 65px;
     min-width: 260px;
     border-radius: 5px;
     background-color: rgb(24, 56, 132);
@@ -128,7 +175,7 @@ header{
 }
 .contador-4{
     padding: 15px;
-    height: 85px;
+    height: 65px;
     min-width: 260px;
     border-radius: 5px;
     background-color: rgb(24, 56, 132);
@@ -150,8 +197,9 @@ header{
     
 }
 .textos-contadores h2{
-    font-size: 50px;
+    font-size: 40px;
     margin-left: 15px;
+    margin-bottom: 0px;
 }
 
 
@@ -167,20 +215,21 @@ header{
 }
 
 
+
 /* div */
-.search-box {
+  .search-box {
     position: absolute;
-    top: 6%;
-    left: 15.7%;
+    top: 6.8%;
+    left: 15.6%;
     transform: translate(-50%, -50%);
     background: rgb(24, 56, 132);
     height: 50px;
     border-radius: 2px;
-    padding: 10px;
+    padding: 8px;
 }
-
-/* input */
-.search-input {
+  
+  /* input */  
+  .search-input {
     outline: none;
     border: none;
     background: none;
@@ -190,19 +239,18 @@ header{
     float: right;
     font-size: 16px;
     transition: .3s;
-    line-height: 30px;
+    line-height: 32px;
 }
-
-.search-input::placeholder {
+  .search-input::placeholder {
     color: #dbc5b0;
-}
-
-/* icon */
-.search-btn {
+  }
+  
+  /* icon */
+  .search-btn {
     color: #fff;
     float: right;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     border-radius: 50px;
     background: #183884;
     display: flex;
@@ -210,101 +258,38 @@ header{
     align-items: center;
     text-decoration: none;
     transition: .3s;
-}
+  }
+  
+  .search-input:focus,
+  .search-input:not(:placeholder-shown) {
+    width: 270px;
+    padding: 0 6px;
+  }
+  
+  .search-box:hover > .search-input {
+    width: 270px;
+    padding: 0 6px;
+  }
+  
+  .search-box:hover > .search-btn,
+  .search-input:focus + .search-btn,
+  .search-input:not(:placeholder-shown) + .search-btn {
+    background: #fff;
+    color: #183884;
+  }
 
-.search-input:focus,
-.search-input:not(:placeholder-shown) {
-width: 270px;
-padding: 0 6px;
-}
 
-.search-box:hover > .search-input {
-width: 270px;
-padding: 0 6px;
-}
-
-.search-box:hover > .search-btn,
-.search-input:focus + .search-btn,
-.search-input:not(:placeholder-shown) + .search-btn {
-background: #fff;
-color: #183884;
-}
-
-
-.requestShiftLabel {
+  .requestShiftLabel {
     display: inline-block;
     max-width: 0;
     overflow: hidden;
     transition: all 1s;
     border-radius: 100%;
-}
-
-button:hover .requestShiftLabel {
+  }
+  
+  button:hover .requestShiftLabel {
     min-width: 1000px;
-}
-.btn-expandable {
+  }
+  .btn-expandable {
     border-radius: 50px;
-}
-
-/* TABELA DINAMICA */
-table{
-    width: 100%;
-    padding-top: 10px;
-    text-align: center;
-    justify-items: center;
-}
-th{
-    padding: 5px;
-}
-tr, td{
-    text-align: center;
-}
-tfoot td{
-    padding: 10px;
-    background-color: #ebe8e8;
-}
-table, th, td{
-    border-collapse: separate;
-    border-spacing:0 10px;
-}
-
-/* MODAL */
-.modal-title{
-    font-size: 25px;
-    color: rgb(24, 56, 132);
-    display: flex;
-    font-weight: bold;
-}
-.boxCredenciais p{
-    margin-bottom: 0px;
-}
-form{
-    display: flex;
-    flex-direction: column;
-    padding: 20px
-}
-.botao{
-    background: transparent;
-    height: 40px;
-    width: 100%;
-    border-radius: 5px;
-    border: solid 1px #CCCCCC;
-    padding: 0px 10px;
-}
-.botao:focus{
-    outline: 0;
-}
-.boxCredenciais {
-    display: flex;
-    margin: 5px;
-    flex-direction: column;
-}
-#boxNumeroApelido, #boxCargoArea{
-    padding-top: 5px;
-    display: flex;
-    flex-direction: row;  
-    justify-content: space-between;
-}
-#boxEmail{
-    padding-top: 5px;
-}
+  }

@@ -6,9 +6,6 @@ const database = require('../models/index')
 const router = Router()
 
 router.get('/instrutores', InstrutorController.pegaTodos)
-router.get('/instrutores/novo', (req, res) => {
-    res.render('instrutores/novo')
-})
 router.post('/instrutores/save', InstrutorController.criaInstrutor)
 router.post('/instrutores/apagar', InstrutorController.apagaInstrutor)
 router.get('/instrutores/editar/:id', (req, res) => {

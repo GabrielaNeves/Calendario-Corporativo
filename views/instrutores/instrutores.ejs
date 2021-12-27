@@ -1,16 +1,87 @@
 <%- include ('../partials/header.ejs') %>
 <body>
     <%- include ('../partials/navbar.ejs') %>
-    <div class="container" style="margin-left: 78px;">
-        <h2>Instrutores</h2>
-        <a class="btn btn-success" href="instrutores/novo">Adicionar novo instrutor</a>
-        <table class="table table-striped">
+
+    <section class="home-section">
+        <div class="cabecario">
+    
+          <div>
+            <h2 id="titulo">Instrutores</h2>
+          </div>
+          <div class="Search-button">
+            <div class="search-box">
+              <input type="text" class="search-input" placeholder="Pesquisar Instrutor">
+              <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+          </div>
+    
+        </div>
+    
+        <!-- <input  placeholder="Pesquisar professor"> -->
+        </div>
+        <div class="cabecariosecundario">
+          <div class="campo-contadores">
+            <div class="contador-1">
+              <div class="icone-contador">
+                <div class="background-icon">
+                  <i><img src="../imagens/icon-turmas.svg"></i>
+                </div>
+              </div>
+              <div class="textos-contadores">
+                <h3>Nº Turmas</h3>
+                <h2>10</h2>
+              </div>
+            </div>
+            <div class="contador-2">
+              <div class="icone-contador">
+                <div class="background-icon">
+                  <i><img src="../imagens/icon-home.svg"></i>
+                </div>
+              </div>
+              <div class="textos-contadores">
+                <h3>Nº Turmas</h3>
+                <h2>10</h2>
+              </div>
+            </div>
+            <div class="contador-3">
+              <div class="icone-contador">
+                <div class="background-icon">
+                  <i><img src="../imagens/icon-disciplinas.svg"></i>
+                </div>
+              </div>
+              <div class="textos-contadores">
+                <h3>Contador</h3>
+                <h2>10</h2>
+              </div>
+            </div>
+            <div class="contador-4">
+              <div class="icone-contador">
+                <div class="background-icon">
+                  <i><img src="../imagens/icon-salas.svg"></i>
+                </div>
+              </div>
+              <div class="textos-contadores">
+                <h3>Nº alunos</h3>
+                <h2>99</h2>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+        <div class="primeiro-campo">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Adicionar Instrutor
+            </button>
+        </div>
+        <section class="campos-gerais">
+          <table class="table table-striped">
             <thead>
                 <tr>
                     <th>Nome</th>
                     <th>Cargo</th>
                     <th>Email</th>
-                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
@@ -20,17 +91,47 @@
                         <td><%= instrutores.cargo %></td>
                         <td><%= instrutores.email %></td>
                         <td>
+                            <a href="/instrutores/editar/<%= instrutores.id %>" class="btn btn-primary">
+                                <i>
+                                    <img src="/imagens/edit_white_24dp.svg" alt="Editar">
+                                </i>
+                            </a>
                             <form action="/instrutores/apagar" method="POST" style="display:inline;", onsubmit="confirmaDelecao(event, this)">
                                 <input type="hidden" name="id" value="<%= instrutores.id %>">
-                                <button class="btn btn-danger">Apagar</button>
+                                <button class="btn btn-danger">
+                                    <i>
+                                        <img src="/imagens/delete_white_24dp.svg" alt="Apagar">
+                                    </i>
+                                </button>
                             </form>
-                            <a href="/instrutores/editar/<%= instrutores.id %>" class="btn btn-warning">Editar</a>
-
                         </td>
                     </tr>
                 <% }) %>
             </tbody>
         </table>
+
+        </section>
+
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cadastro do Instrutor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+              
+                <form action="/instrutores/save" method="POST">
+                    <input class="form-control" type="text" name="nome" placeholder="Nome">
+                    <input class="form-control" type="text" name="contato" placeholder="Contato">
+                    <input class="form-control" type="text" name="apelido" placeholder="Apelido">
+                    <input class="form-control" type="text" name="cargo" placeholder="Cargo">
+                    <input class="form-control" type="text" name="email" placeholder="E mail">
+                    <button class="btn btn-success">Cadastrar</button>
+                </form>
+
+
 </body>
 <%- include ('../partials/footer.ejs') %>
 <script>
