@@ -1,0 +1,21 @@
+<%- include ('../partials/header.ejs') %>
+<body>
+    <%- include ('../partials/navbar.ejs') %>
+    <div class="card" style="margin-left: 78px;">
+        <div class="card-header">
+            <h2>Edição de Instrutor</h2>
+        </div>
+        <div class="card-body">
+            <form action="/instrutores/atualizar" method="POST">
+                <input class="form-control" type="text" name="nome" placeholder="Nome" value="<%= instrutor.nome %>">
+                <input class="form-control" type="text" name="contato" placeholder="Contato" value="<%= instrutor.contato %>">
+                <input class="form-control" type="text" name="apelido" placeholder="Apelido" value="<%= instrutor.apelido %>">
+                <input class="form-control" type="text" name="cargo" placeholder="Cargo" value="<%= instrutor.cargo %>">
+                <input class="form-control" type="text" name="email" placeholder="Email" value="<%= instrutor.email %>">
+                <input type="hidden" name="id" value="<%= instrutor.id %>">
+                <button class="btn btn-success">Atualizar</button>
+            </form>
+        </div>
+    </div>
+</body>
+<%- include ('../partials/footer.ejs') %>

@@ -1,0 +1,44 @@
+<%- include ('../partials/header.ejs') %>
+<body>
+    <%- include ('../partials/navbar.ejs') %>
+    <div class="container" style="margin-left: 78px;">
+        <h2>Instrutores</h2>
+        <a class="btn btn-success" href="instrutores/novo">Adicionar novo instrutor</a>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                    <th>Email</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% instrutores.forEach(instrutores => {%>
+                    <tr>
+                        <td><%= instrutores.nome %></td>
+                        <td><%= instrutores.cargo %></td>
+                        <td><%= instrutores.email %></td>
+                        <td>
+                            <form action="/instrutores/apagar" method="POST" style="display:inline;", onsubmit="confirmaDelecao(event, this)">
+                                <input type="hidden" name="id" value="<%= instrutores.id %>">
+                                <button class="btn btn-danger">Apagar</button>
+                            </form>
+                            <a href="/instrutores/editar/<%= instrutores.id %>" class="btn btn-warning">Editar</a>
+
+                        </td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+</body>
+<%- include ('../partials/footer.ejs') %>
+<script>
+    function confirmaDelecao(event, form) {
+    event.preventDefault()
+    let decision = confirm('Apagar Instrutor?')
+    if(decision){
+        form.submit()
+    }
+}
+</script>
