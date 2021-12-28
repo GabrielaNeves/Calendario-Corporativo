@@ -1,5 +1,6 @@
 const bodyParser = require('body-parser'); // Importando o Body-Parser
 const instrutores = require('./instrutoresRoute')
+const salas = require('./salasRoute')
 const path = require('path')
 
 
@@ -8,5 +9,6 @@ module.exports = app => {
     app.use(bodyParser.urlencoded({ extended: false }));
     app.use(bodyParser.json());
     app.use(instrutores)
+    app.use(salas)
     app.get('/', (req, res) => res.render('index'))
 }

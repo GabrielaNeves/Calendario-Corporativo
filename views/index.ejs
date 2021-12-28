@@ -1,8 +1,328 @@
 <%- include ('partials/header.ejs') %>
+<link rel="stylesheet" href="/css/index.css">
+<!--FULL CALENDAR-->
+<link href='/lib/main.css' rel='stylesheet' />
+<script src='/lib/main.js'></script>
+<!--Mini-Calendario-Moral-->
+<script src="/js/CalendarioMoral.js"></script>
 <body>
     <%- include ('partials/navbar.ejs') %>
-    <section>
-        <h1>Home</h1>
-    </section>
+    <section class="home-section">
+        <div class="cabecario-home">
+
+            <div>
+                <h2 id="titulo">Sistema de Gerenciamento CEC</h2>
+            </div>
+
+        </div>
+        <section class="Area-principal">
+            <div class="quadro-principal">
+                <div class="salas">
+                    <div class="sessao-1">
+                        <div class="titulo-sessao">
+                            <h4>Sala 1</h4>
+                        </div>
+                        <div class="Dia1">
+                            <div class="card-sala1">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                            <div class="card-sala2">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                            <div class="card-sala3">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                            <div class="card-sala4">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                            <div class="card-sala5">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sessao-2">
+                        <div class="titulo-sessao">
+                            <h4>Sala 2</h4>
+                        </div>
+                        <div class="Dia2">
+                            <div class="card-sala1">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                            <div class="card-sala2">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                            <div class="card-sala3">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sessao-3">
+                        <div class="titulo-sessao">
+                            <h4>Sala 3</h4>
+                        </div>
+                        <div class="Dia1">
+                            <div class="card-sala3">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                            <div class="card-sala4">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                            <div class="card-sala5">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sessao-4">
+                        <div class="titulo-sessao">
+                            <h4>Sala 4</h4>
+                        </div>
+                        <div class="Dia2">
+                            <div class="card-sala4">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                            <div class="card-sala5">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sessao-5">
+                        <div class="titulo-sessao">
+                            <h4>Sala 5</h4>
+                        </div>
+                        <div class="Dia1">
+                            <div class="card-sala2">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                            <div class="card-sala3">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                            <div class="card-sala4">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                            <div class="card-sala5">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sessao-6">
+                        <div class="titulo-sessao">
+                            <h4>Sala 6</h4>
+                        </div>
+                        <div class="Dia2">
+                            <div class="card-sala1">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                            <div class="card-sala2">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                            <div class="card-sala3">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                            <div class="card-sala4">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                            <div class="card-sala5">
+                                <b>
+                                    <p>Professor: Daniel GG</p>
+                                </b>
+                                <p>Horario</p>
+                                <b>
+                                    <p>08:00/12:00</p>
+                                </b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Campo-Direita">
+                <div class="campos-direitos">
+                    <div class="titulo-direita">
+                        <p id="date"></p>
+                    </div>
+                    <div class="calendario">
+                        <div id='calendar'></div>
+                    </div>
+                    <div class="campo-contadores">
+                        <div class="contador-1-home">
+                            <div class="icone-contador-home">
+                                <div class="background-icon-home">
+                                    <i><img src="../imagens/icon-turmas.svg"></i>
+                                </div>
+                            </div>
+                            <div class="textos-contadores-home">
+                                <h3>Nº Professores</h3>
+                                <h2>10</h2>
+                            </div>
+                        </div>
+                        <div class="contador-2-home">
+                            <div class="icone-contador-home">
+                                <div class="background-icon-home">
+                                    <i><img src="../imagens/icon-home.svg"></i>
+                                </div>
+                            </div>
+                            <div class="textos-contadores-home">
+                                <h3>Nº Turmas</h3>
+                                <h2>10</h2>
+                            </div>
+                        </div>
+                        <div class="contador-3-home">
+                            <div class="icone-contador-home">
+                                <div class="background-icon-home">
+                                    <i><img src="../imagens/icon-disciplinas.svg"></i>
+                                </div>
+                            </div>
+                            <div class="textos-contadores-home">
+                                <h3>Nº Alunos</h3>
+                                <h2>100</h2>
+                            </div>
+                        </div>
+                        <div class="contador-4-home">
+                            <div class="icone-contador-home">
+                                <div class="background-icon-home">
+                                    <i><img src="../imagens/icon-salas.svg"></i>
+                                </div>
+                            </div>
+                            <div class="textos-contadores-home">
+                                <h3>Nº Disciplinas</h3>
+                                <h2>99</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            n = new Date();
+            y = n.getFullYear();
+            m = n.getMonth() + 1;
+            d = n.getDate();
+            document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+        </script>
 </body>
 <%- include ('partials/footer.ejs') %>
