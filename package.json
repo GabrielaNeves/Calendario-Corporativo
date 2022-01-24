@@ -4,7 +4,9 @@
   "description": "Este é um projeto desenvolvido na equipe da Autoplay.\r Possui como objetivo realizar agendamentos de salas disponíveis de acordo com as datas do calendário presente no site.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli"
   },
   "repository": {
     "type": "git",
