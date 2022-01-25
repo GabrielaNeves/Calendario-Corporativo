@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn src/server.ts",
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli"
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn src/shared/infra/http/server.ts",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
+    "seed:admin": "ts-node-dev src/shared/infra/typeorm/seed/admin.ts" 
   },
   "keywords": [],
   "author": "",

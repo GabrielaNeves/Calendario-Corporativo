@@ -1,4 +1,4 @@
-import { Pillar } from "../../entities/Pillar";
+import { Pillar } from "../../infra/typeorm/entities/Pillar";
 import { ICreatePillarDTO, IPillarRepository } from "../IPillarsRepository";
 
 

@@ -11,9 +11,9 @@ class CreateClassroomController{
 
         const createClassroomUseCase = container.resolve(CreateClassroomUseCase)
     
-        await createClassroomUseCase.execute({ name, description, capacity });
+        const classroom = await createClassroomUseCase.execute({ name, description, capacity });
     
-        return response.status(201).send();
+        return response.status(201).json(classroom);
     }
 };
 

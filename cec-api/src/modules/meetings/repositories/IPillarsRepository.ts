@@ -1,4 +1,4 @@
-import { Pillar } from "../entities/Pillar";
+import { Pillar } from "../infra/typeorm/entities/Pillar";
 
 interface ICreatePillarDTO {
     name: string;

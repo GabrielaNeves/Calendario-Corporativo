@@ -1,4 +1,4 @@
-import { AppError } from "../../../../errors/AppError";
+import { AppError } from "../../../../shared/errors/AppError";
 import { PillarsRepositoryInMemory } from "../../repositories/in-memory/PillarsRepositoryInMemory";
 import { CreatePillarUseCase } from "./CreatePillarUseCase"
 
