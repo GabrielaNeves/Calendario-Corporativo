@@ -1,8 +1,8 @@
 import { Router } from 'express';
 import multer from 'multer';
-import { CreatePillarController } from '../modules/meetings/useCases/createPillar/CreatePillarContoller'
-import { ImportPillarController } from '../modules/meetings/useCases/importPillar/ImportPillarController';
-import { ListPillarsController } from '../modules/meetings/useCases/listPillars/ListPillarsController';
+import { CreatePillarController } from '../../../../modules/meetings/useCases/createPillar/CreatePillarContoller'
+import { ImportPillarController } from '../../../../modules/meetings/useCases/importPillar/ImportPillarController';
+import { ListPillarsController } from '../../../../modules/meetings/useCases/listPillars/ListPillarsController';
 
 const pillarRouters = Router();
 

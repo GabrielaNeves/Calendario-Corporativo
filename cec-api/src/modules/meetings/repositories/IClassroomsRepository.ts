@@ -1,4 +1,4 @@
-import { Classroom } from "../entities/Classroom";
+import { Classroom } from "../infra/typeorm/entities/Classroom";
 
 
 interface ICreateClassroomDTO{
@@ -8,7 +8,8 @@ interface ICreateClassroomDTO{
 }
 
 interface IClassroomsRepository{
-    create({ capacity, description, name }: ICreateClassroomDTO): Promise<void>;
+    create({ capacity, description, name }: ICreateClassroomDTO): Promise<Classroom>;
+    list(): Promise<Classroom[]>;
     findByName(name: string): Promise<Classroom>;
 }
 

@@ -1,5 +1,5 @@
-import { Pillar } from '../../entities/Pillar'
-import { IPillarRepository, ICreatePillarDTO } from '../IPillarsRepository';
+import { Pillar } from '../entities/Pillar'
+import { IPillarRepository, ICreatePillarDTO } from '../../../repositories/IPillarsRepository';
 
 import { getRepository, Repository } from 'typeorm';
 
