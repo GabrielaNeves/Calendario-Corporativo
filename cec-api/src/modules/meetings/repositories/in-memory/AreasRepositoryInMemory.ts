@@ -15,12 +15,16 @@ class AreasRepositoryInMemory implements IAreasRepository {
         });
         
         this.areas.push(area);
-
+        
         return area;
     }
     
     async findByName(name: string): Promise<Area> {
         return this.areas.find(area => area.name === name);
+    }
+
+    async list(): Promise<Area[]> {
+        return this.areas;
     }
 }
 
