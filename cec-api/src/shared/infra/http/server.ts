@@ -1,4 +1,5 @@
 import express, { NextFunction } from 'express';
+import cors from 'cors';
 import 'express-async-errors';
 import { Request, Response } from 'express';
 import swaggerUi from 'swagger-ui-express';
@@ -14,6 +15,8 @@ import { AppError } from '../../errors/AppError';
 createConnection();
 
 const app = express();
+
+app.use(cors());
 
 app.use(express.json());
 

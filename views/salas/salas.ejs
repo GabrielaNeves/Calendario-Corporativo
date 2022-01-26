@@ -348,4 +348,13 @@
         </section>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    axios.get('http://localhost:3333/classrooms')
+        .then(response => {
+        const salas = response.data;
+        const list = document.getElementById('')
+        });
+
+</script>
 <%- include ('../partials/footer.ejs') %>

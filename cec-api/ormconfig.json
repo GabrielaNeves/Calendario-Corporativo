@@ -3,7 +3,7 @@
     "host": "localhost",
     "port": 3306,
     "username": "root",
-    "password": "123",
+    "password": "root",
     "database": "cec",
     "entities": ["./src/modules/meetings/infra/typeorm/entities/*ts", "./src/modules/accounts/infra/typeorm/entities/*.ts"],
     "migrations": ["./src/shared/infra/typeorm/migrations/*.ts"],
