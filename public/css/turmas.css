@@ -309,7 +309,7 @@ tbody>tr>:nth-child(3){
 .search-box {
     position: absolute;
     top: 6%;
-    left: 13.8%;
+    left: 14%;
     transform: translate(-50%, -50%);
     background: rgb(24, 56, 132);
     height: 50px;

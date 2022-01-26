@@ -5,7 +5,8 @@ const database = require('../models/index')
 
 const router = Router()
 
-router.get('/turma', (req, res) => {
-    res.render('turma/turma')
+router.get('/turmas', (req, res) => {
+    res.render('turmas/turmas')
 })
+
 module.exports = router

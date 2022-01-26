@@ -3,6 +3,7 @@ const login = require('./loginRoute')
 const instrutores = require('./instrutoresRoute')
 const salas = require('./salasRoute')
 const disciplinas = require('./disciplinasRoute')
+const turmas = require('./turmasRoute')
 const path = require('path')
 
 
@@ -11,6 +12,7 @@ module.exports = app => {
     app.use(bodyParser.urlencoded({ extended: false }));
     app.use(bodyParser.json());
     app.use(login)
+    app.use(turmas)
     app.use(disciplinas)
     app.use(instrutores)
     app.use(salas)
