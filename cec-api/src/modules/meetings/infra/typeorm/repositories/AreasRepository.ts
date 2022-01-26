@@ -17,18 +17,22 @@ class AreasRepository implements IAreasRepository {
             description,
             pillar_id
         });
-
+        
         await this.repository.save(area);
-
+        
         return area;
     }
-
+    
     async findByName(name: string): Promise<Area> {
         const area = await this.repository.findOne({ name });
-
+        
         return area;
     }
-
+    
+    async list(): Promise<Area[]> {
+        const areas = await this.repository.find();
+        return areas;
+    }
 };
 
 export { AreasRepository };

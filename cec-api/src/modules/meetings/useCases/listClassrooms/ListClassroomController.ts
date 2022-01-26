@@ -6,9 +6,9 @@ import { ListClassroomsUseCase } from './ListClassroomsUseCase';
 class ListClassRoomsController {
 
     async handle(request: Request, response: Response): Promise<Response>{
-        const listClassroomsUserCase = container.resolve(ListClassroomsUseCase);
+        const listClassroomsUseCase = container.resolve(ListClassroomsUseCase);
 
-        const all = await listClassroomsUserCase.execute();
+        const all = await listClassroomsUseCase.execute();
 
         return response.json(all);
     }
