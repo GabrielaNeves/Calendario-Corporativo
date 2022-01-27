@@ -7,6 +7,8 @@ import { PillarsRepository } from '../../modules/meetings/infra/typeorm/reposito
 import { IPillarRepository } from '../../modules/meetings/repositories/IPillarsRepository';
 import { IAreasRepository } from '../../modules/meetings/repositories/IAreasRepository';
 import { AreasRepository } from '../../modules/meetings/infra/typeorm/repositories/AreasRepository';
+import { IInstructorsRepository } from '../../modules/meetings/repositories/IInstructorsRepository';
+import { InstructorsRepository } from '../../modules/meetings/infra/typeorm/repositories/InstructorsRepository';
 
 container.registerSingleton<IPillarRepository>(
     "PillarsRepository",
@@ -26,4 +28,9 @@ container.registerSingleton<IUsersRepository>(
 container.registerSingleton<IAreasRepository>(
     "AreasRepository",
     AreasRepository
+);
+
+container.registerSingleton<IInstructorsRepository>(
+    "InstructorsRepository",
+    InstructorsRepository
 );

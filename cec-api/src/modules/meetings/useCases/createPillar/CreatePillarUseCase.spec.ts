@@ -25,8 +25,6 @@ describe("Create pillar", () => {
 
         const pillarCreated = await pillarsRepositoryInMemory.findByName(pillar.name);
 
-        console.log(pillarCreated);
-
         expect(pillarCreated).toHaveProperty("id");
     });
 

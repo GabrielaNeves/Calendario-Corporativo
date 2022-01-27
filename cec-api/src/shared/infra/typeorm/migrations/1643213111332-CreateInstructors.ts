@@ -27,7 +27,7 @@ export class CreateInstructors1643213111332 implements MigrationInterface {
                             type: "varchar"
                         },
                         {
-                            name: "avaliable",
+                            name: "available",
                             type: "boolean"
                         },
                         {
