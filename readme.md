@@ -38,7 +38,7 @@ O servidor irá iniciar na porta 8080. Abra seu navegador e acesse <http://local
 # Caso tenha interesse em testar nossa API a parte <br>
 
 ### Acesse a pasta do projeto no terminal/cmd
-$ cd Calendario-Corporativo
+$ cd Calendario-Corporativo <br>
 $ cd cec-api
 
 ### Instale as dependências
