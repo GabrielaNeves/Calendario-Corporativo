@@ -30,7 +30,7 @@ $ cd Calendario-Corporativo
 $ npm install
 
 ### Execute a aplicação 
-$ npm start
+$ nodemon index.js
 
 O servidor irá iniciar na porta 8080. Abra seu navegador e acesse <http://localhost:8080>
 
