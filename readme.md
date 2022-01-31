@@ -6,51 +6,51 @@ Possui como objetivo realizar agendamentos de salas disponíveis de acordo com a
 
 ⚠️Nesta última release disponibilizada encontra-se somente o crud básico da tela de professores e as interfaces estáticas, além de uma API extra que estávamos trabalhando a parte para realizar o consumo do Front.
 
-## Componentes <br>
+# Componentes <br>
 Integrantes do grupo:<br>
 Gabriela Neves: github.com/GabrielaNeves <br>
 Lucas Zortea: github.com/lucas-zortea <br>
 José Henrique: github.com/var3sk <br>
 ...
 
-## Instruções de instalação e utilização<br>
+# Instruções de instalação e utilização<br>
 
-# Clone este repositório ou baixe o zip da nossa última release
+### Clone este repositório ou baixe o zip da nossa última release
 $ git clone <https://github.com/GabrielaNeves/Calendario-Corporativo> 
 
-# Acesse o explorador da sua IDE
+### Acesse o explorador da sua IDE
 - Procure a pasta Config
 - Vá até o arquivo "config.json"
 - Nas linhas 3 e 4 do arquivo, modifique o username e password para os mesmos do seu banco de dados.
 
-# Acesse a pasta do projeto no cmd
+### Acesse a pasta do projeto no cmd
 $ cd Calendario-Corporativo
 
-# Instale as dependências
+### Instale as dependências
 $ npm install
 
-# Execute a aplicação 
+### Execute a aplicação 
 $ npm start
 
 O servidor irá iniciar na porta 8080. Abra seu navegador e acesse <http://localhost:8080>
 
 
-## Caso tenha interesse em testar nossa API a parte <br>
+# Caso tenha interesse em testar nossa API a parte <br>
 
-# Acesse a pasta do projeto no terminal/cmd
+### Acesse a pasta do projeto no terminal/cmd
 $ cd Calendario-Corporativo
 $ cd cec-api
 
-# Instale as dependências
+### Instale as dependências
 $ npm install 
 
-# Execute nosso teste automatizado
+### Execute nosso teste automatizado
 $ npm test
 
-# Execute o dev
+### Execute o dev
 $ npm run dev
 
-# Execute a aplicação
+### Execute a aplicação
 $ npm run typeorm
 
 
